@@ -1,0 +1,11 @@
+.flex-container{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.calculadora-container{
+    margin-top: 5rem;
+    border: 0.1rem solid black;
+    padding: 4rem;
+}

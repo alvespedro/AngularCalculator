@@ -1,0 +1,14 @@
+<div class="main-container">
+  <div class="flex-container">
+      <button class="btn-primary" [class.active] ="operador == 'soma'" (click)="qualOperacao('soma')"  > Soma </button>
+      <button class="btn-primary" [class.active] ="operador == 'sub'" (click)="qualOperacao('sub')"> Subtração </button>
+      <button class="btn-primary" [class.active] ="operador == 'mul'" (click)="qualOperacao('mul')" > Multiplicação </button>
+      <button class="btn-primary" [class.active] ="operador == 'div'" (click)="qualOperacao('div')" > Divisão </button>
+  </div> 
+</div>
+
+<div class="main-container">
+  <div class="container-fluid">
+       <app-calculadora [operacao]="operador"></app-calculadora>
+   </div>
+</div>

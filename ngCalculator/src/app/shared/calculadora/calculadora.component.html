@@ -1,0 +1,15 @@
+
+<div class="calculadora-container">
+  <div class="flex-container">  
+     <!-- <form class="form-inline"> -->
+          <input type="float" (blur)="calcularesultado()" (onchange)="calcularesultado()" [(ngModel)]="param1" /> 
+          <span *ngIf="operacao == 'soma'"  >+</span>
+          <span *ngIf="operacao == 'sub'"  >-</span>
+          <span *ngIf="operacao == 'mul'"  >x</span>
+          <span *ngIf="operacao == 'div'"  >/</span>
+          <input type="float" (blur)="calcularesultado()" (onchange)="calcularesultado()" [(ngModel)]="param2"/>
+          <span>=</span>
+          <span>{{result}}</span>
+    <!--  </form> -->
+  </div> 
+</div>
